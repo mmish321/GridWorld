@@ -24,4 +24,19 @@
    360:North  
 2.You can move up down and side to side however, if the bug moves and is out of bounds or outside the grid, an error message will be thrown out.  
 3.void setColor  
-4.The bug disappeared from the screen
+4.The bug disappeared from the screen    
+
+# Part 2
+
+## Set 2  
+
+1.sideLength is the length of the box that BoxBug travels in  
+2.steps tracks how many steps the boxbug moves so that it moves that specific amount  
+3.It is called twice because it only turns the bug 45 degrees and in order to make a complete turn you must turn ninety degrees so the turn is called twice.  
+4. Because the move function is inherited from the super class Bug.  
+5.No you cannot change the square pattern as in there are no methods in which you change the variable sideLength so once the bug is constructed it cannot be changed!  
+6. If there are obstacles in the path of the boxBug it will change its path.  
+7.Once you turn twice.  
+
+### Exercises  
+1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar!
