@@ -41,4 +41,53 @@
 ### Exercises  
 1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar.  
 
+2. Spiral bug moves in a spiral and every single bug created is basically going to do what its name tell you.  
+5.    
+
+
+# Part 3  
+
+## Set 3  
+
+1.loc1.getRow();  
+2. false  
+3.(3,5)    
+4.South east  
+5. You pass in the direction and the starting location, as the program translates the direction into coordinates, then it will execute and return the tile that has those transformations on the original.  
+
+## Set 4    
+1. Gets the count of objects in a grid by getting the size of the ArrayList for get occupied Location and get a count of the empty locations in a bounding grid by subtracting that number from the total number of grid spaces.  
+
+2. the isValid() method  
+
+3. The implementations would be found in the classes that use this interface!  
+
+4.No because ArrayLists are much more flexible for adjusting values in an array and can have adjusted values and different lengths based on the information passed to them.    
+
+## Set 5 
+
+1. Color direction and location  
+2. Default color is red and direction is north 
+3. The Actor class was created as a class because there are default methods for all actors and it wouldn't feasible to write all the methods within all the subclasses. There needs to be a class where you can inherit methods.  
+4.No,and actor cannot be put onto a grid twice without removing itself and it can't remove itself twice. However it can be placed , remove itself and put back.
+5. An actor has the method turn() which will turn it 45 degrees  and so to turn 90 degrees to the right , you would call turn twice.  
+
+
+## Set 6  
+1. It calls the isValid() method to check if the place its moving to is on the grid.  
+2.It checks to see if its neighboring space is either empty or a flower in which case it moves.  
+3. isValid() and get() to validate its moves  
+4. getAdjacentLocation()  
+5. getLocation()  
+6.isValid() will return false and it will remove itself from the grid.  
+7.It's not needed but it is better to have the data stored in the variable to reduce clutter and the make the code dry.  
+8.Because it inherits the bugs color.  
+9.No because it's not moving and placing a flower is part of move  
+10.flower.putSelfInGrid(gr, loc);  
+11.4 times;
+
+
+
+
+
 
