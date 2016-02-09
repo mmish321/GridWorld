@@ -3,7 +3,7 @@ package part2;
 import info.gridworld.actor.Bug;
 
 public class ZBug extends Bug {
-	
+	private boolean done = false;
 	private int steps;
 	private int sideLength;
 
@@ -22,15 +22,27 @@ public class ZBug extends Bug {
 	 * Moves to the next location of the square.
 	 */
 	public void act() {
-		if (steps < sideLength + 1 && canMove()) {
-			move();
-			steps++;
-		} else {
-			turn();
-			turn();
-			steps = 0;
-			sideLength = sideLength + 1;
-		}
+		if (!done) {
+			this.setDirection(90);
+			for (int i = 0; i < sideLength; i++) {
+				move();
+			}
+			this.turn();
+			this.turn();
+			this.turn();
+			for (int i = 0; i < sideLength; i++) {
+				move();
+			}
+			this.turn();
+			this.turn();
+			this.turn();
+			this.turn();
+			this.turn();
+			for (int i = 0; i < sideLength; i++) {
+				move();
+			}
+			done = true;
+		} 
 	}
 
 }

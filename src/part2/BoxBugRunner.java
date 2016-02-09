@@ -31,15 +31,18 @@ public class BoxBugRunner {
 	
 	public static void main(String[] args) {
 		ActorWorld world = new ActorWorld();
-		BoxBug alice = new BoxBug(6);
-		alice.setColor(Color.ORANGE);
-		world.add(new Location(7, 8), alice);
-		CircleBug mish = new CircleBug(2);
-		mish.setColor(Color.BLUE);  
-		world.add(new Location(2,3), mish);
-		SpiralBug colt = new SpiralBug(3);
-		colt.setColor(Color.RED);  
-		world.add(new Location(4,5), colt);
+		int[] dancing = {3,4,5};
+//		BoxBug alice = new BoxBug(6);
+	//	alice.setColor(Color.ORANGE);
+		//world.add(new Location(7, 8), alice);
+		//CircleBug mish = new CircleBug(2);
+		//mish.setColor(Color.BLUE);  
+		//world.add(new Location(2,3), mish); 
+		//ZBug jack = new ZBug(4);
+		//jack.setColor(Color.RED);
+		//world.add(new Location(0,4), jack);
+		DancingBug simon = new DancingBug(dancing);
+		world.add(new Location(0,4), simon);
 		world.show();
 	}
 }

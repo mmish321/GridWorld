@@ -39,4 +39,6 @@
 7.Once you turn twice.  
 
 ### Exercises  
-1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar!
+1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar.  
+
+
