@@ -42,7 +42,7 @@
 1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar.  
 
 2. Spiral bug moves in a spiral and every single bug created is basically going to do what its name tell you.  
-5.    
+5. Check out the src code!    
 
 
 # Part 3  
@@ -66,7 +66,7 @@
 
 ## Set 5 
 
-1. Color direction and location  
+1. Color, direction and location  
 2. Default color is red and direction is north 
 3. The Actor class was created as a class because there are default methods for all actors and it wouldn't feasible to write all the methods within all the subclasses. There needs to be a class where you can inherit methods.  
 4.No,and actor cannot be put onto a grid twice without removing itself and it can't remove itself twice. However it can be placed , remove itself and put back.
@@ -84,7 +84,31 @@
 8.Because it inherits the bugs color.  
 9.No because it's not moving and placing a flower is part of move  
 10.flower.putSelfInGrid(gr, loc);  
-11.4 times;
+11.4 times;  
+
+## Group Questions  
+
+### 1.Specify  
+a) It will move one space and jump over the obstacle on the next jump.  
+b)It will jump once and turn 90 degrees.  
+c)It will turn 90 degrees and resume jumping
+d)It will delete the actor (technically kill it)  
+e) They will kill each other.
+f) I don't think so.    
+
+### 2.Design  
+a) Bug  
+b) Not really, there aren't any bugs that have the same functionality as Jumper  
+c) Yes there should be a constructor, the parameter should be the grid
+d) The act method should be overridden and  the constructor as well and canMove() should be overridden and so should move()
+e) canJump() to test whether the bug can jump and a delete method to delete other bugs and move to their space  
+f) Creating an obstacle course for the bug involving other actors, other jumpers, rocks, flowers, and a limited grid space  
+
+### Code  
+Check the src code  
+
+### Testing  
+The jumper indeed killed all other actors accept for flowers and jumped 2 spaces! It did exactly what we wanted to do.
 
 
 
