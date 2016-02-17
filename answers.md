@@ -42,6 +42,7 @@
 1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar.  
 
 2. Spiral bug moves in a spiral and every single bug created is basically going to do what its name tell you.  
+
 5. Check out the src code!    
 
 
