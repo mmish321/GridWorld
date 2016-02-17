@@ -70,7 +70,7 @@
 1. Color, direction and location  
 2. Default color is red and direction is north 
 3. The Actor class was created as a class because there are default methods for all actors and it wouldn't feasible to write all the methods within all the subclasses. There needs to be a class where you can inherit methods.  
-4.No,and actor cannot be put onto a grid twice without removing itself and it can't remove itself twice. However it can be placed , remove itself and put back.
+4.No,and actor cannot be put onto a grid twice without removing itself and it can't remove itself twice. However it can be placed , remove itself and put back.  
 5. An actor has the method turn() which will turn it 45 degrees  and so to turn 90 degrees to the right , you would call turn twice.  
 
 
@@ -78,13 +78,13 @@
 1. It calls the isValid() method to check if the place its moving to is on the grid.  
 2.It checks to see if its neighboring space is either empty or a flower in which case it moves.  
 3. isValid() and get() to validate its moves  
-4. getAdjacentLocation()  
-5. getLocation()  
-6.isValid() will return false and it will remove itself from the grid.  
-7.It's not needed but it is better to have the data stored in the variable to reduce clutter and the make the code dry.  
-8.Because it inherits the bugs color.  
-9.No because it's not moving and placing a flower is part of move  
-10.flower.putSelfInGrid(gr, loc);  
+4. getAdjacentLocation()    
+5. getLocation()    
+6.isValid() will return false and it will remove itself from the grid.    
+7.It's not needed but it is better to have the data stored in the variable to reduce clutter and the make the code dry.    
+8.Because it inherits the bugs color.    
+9.No because it's not moving and placing a flower is part of move    
+10.flower.putSelfInGrid(gr, loc);    
 11.4 times;  
 
 ## Group Questions  
