@@ -39,10 +39,10 @@
 7. Once you turn twice.  
 
 ### Exercises  
-1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similiar.  
+1.  CircleBug is different because it only turns once instead of twice which makes it move in a circular path instead of a square.Other than that it is very similar.  
 2. Spiral bug moves in a spiral and every single bug created is basically going to do what its name tell you.    
 3. Check out the src code!  
-4. Check ou the src code!
+4. Check out the src code!
 5. Check out the src code!    
 
 
@@ -107,3 +107,35 @@ Check the src code
 
 ### Testing  
 The jumper indeed killed all other actors accept for flowers and jumped 2 spaces! It did exactly what we wanted to do.
+
+# Part 4  
+
+## Set 7  
+1. act()  
+2. They getActors(), processActors(actors), and get MoveLocations, and selectMoveLocation, and makeMove().  
+3. No because actually getting the neighbors of the actor should not change for any critter, it should be the same.In other words, even though the critters can move differently, scanning for other actors should not change.  
+4. use the processActors method, make and ArrayList of all their neighbors and process them,check the location that the Critter would move to and if that space is occupied don't move there.  
+5. To make a critter move, getmoveLocations gets the locations that the critter can move to, selectMoveLocations selects the location for that critter to move to and makeMove() moves the critter.  
+6. Critter is an abstract class. meaning that it will never be instantiated.    
+
+## Set 8    
+1. It's processActors method is different so the Chameleon can move differently  
+2. It doesn't rewrite the code for the critter moving which is why it is super because it inherits the code for makeMove and then adds more code to make it move differently 
+3.Add the code that makes Bug drops flowers into the Critter makeMove() methods, then adjust it for the Critter's specific properties.    
+4. It doesn't getActors differently from Critter so it doesn't a new method and just needs to inherit the method.  
+5. Actor   
+6. The getGrid() method    
+
+## Set 9  
+1. CrabCritter does inherit the processActors method from Critter because it did not override the method.  
+2. It gets the locations of actors in the front, right- front, and left - front, and if they are not a rock, they eat them.  
+3. It needs to get the locations of the front, front-right, and front-left spaces in the directions it's moving to. It needs to orient its claws.  
+4. (2,5) , (3,5), and (4,5)  
+5. The crab moves right to left randomly and a Critter just moves randomly across the grid, in all directions.  
+6. When it hits another actor, like a rock or crab that it cannot eat, it turns.  
+7. If the spaces it wants to move to contains another CrabCritter, it  is not validated that space.    
+
+## Exercises  
+1. Check out the src code.  
+2. Check out the src code for ChameleonKid!  
+3. 
