@@ -138,4 +138,5 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 ## Exercises  
 1. Check out the src code.  
 2. Check out the src code for ChameleonKid!  
-3. 
+3. Check out the src code for RockHound!  
+4.
