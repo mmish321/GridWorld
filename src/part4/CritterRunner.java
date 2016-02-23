@@ -37,9 +37,7 @@ public class CritterRunner {
 		ActorWorld world = new ActorWorld();
 		world.add(new Location(7, 8), new Rock());
 		world.add(new Location(3, 3), new Rock());
-	    world.add(new Location (1,1), new RockHound());
-	    world.add(new Location(2,2), new BlusterCritter(Color.RED,7));
-	
+	    world.add(new Location(2,2), new QuickCrab());
 		world.show();
 	}
 }
