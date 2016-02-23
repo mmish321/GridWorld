@@ -1,12 +1,15 @@
 package part4;
 
 import java.util.ArrayList;
-
+import java.awt.Color;
 import info.gridworld.grid.Location;
 import info.gridworld.grid.Grid; 
 
 public class QuickCrab extends CrabCritter {
-	
+	public QuickCrab () {
+		setColor(Color.CYAN);
+		
+	}
 	public ArrayList<Location> getMoveLocations() {
 		 ArrayList<Location> locs = new ArrayList<Location>();
 		 Grid g = getGrid();
