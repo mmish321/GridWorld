@@ -36,6 +36,7 @@ public class CritterRunner {
 	    world.add(new Location(2,2), new QuickCrab());
 	    world.add(new Location(1,3), new BlusterCritter(5));
 	    world.add(new Location(2,3), new KingCrab());
+	    world.add(new Location(4,4), new PoopCritter(0));
 		world.show();
 	}
 }

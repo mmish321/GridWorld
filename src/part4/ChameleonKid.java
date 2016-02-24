@@ -2,8 +2,8 @@ package part4;
 
 import java.awt.Color;
 import java.util.ArrayList;
+
 import info.gridworld.actor.Actor;
-import info.gridworld.grid.Location;
 
 public class ChameleonKid extends ChameleonCritter {
 	 
@@ -40,10 +40,6 @@ private static final double DARKENING_FACTOR = 0.05;
 		/**
 		 * Turns towards the new location as it moves.
 		 */
-		public void makeMove(Location loc) {
-			setDirection(getLocation().getDirectionToward(loc));
-			super.makeMove(loc);
-		}
-	
+		
 
 }

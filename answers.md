@@ -140,4 +140,9 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 2. Check out the src code for ChameleonKid!  
 3. Check out the src code for RockHound!  
 4. Check out the src code for QuickCrab!  
-5. Check out the src code for KingCrag!  
+5. Check out the src code for KingCrag!   
+
+## Group Activity   
+1. PoopCritter will move like a kingcrab in which it makes other actors move away from it and if they can't, the other actors are removed. It will also poop out brown flowers in which oher critters cannot touch.  
+2.  
+ 
