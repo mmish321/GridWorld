@@ -1,9 +1,8 @@
 package part4;
+import java.util.ArrayList;
+
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.Critter;
-import java.awt.Color;
-import java.util.ArrayList;
-import info.gridworld.grid.Location;
 
 public class RockHound extends Critter {
 	

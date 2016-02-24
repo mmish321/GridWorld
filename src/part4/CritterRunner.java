@@ -20,12 +20,8 @@
 package part4;
 
 import info.gridworld.actor.ActorWorld;
-import info.gridworld.actor.Critter;
-import info.gridworld.actor.Flower;
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
-
-import java.awt.Color;
 
 /**
  * This class runs a world that contains critters. <br />
@@ -39,6 +35,7 @@ public class CritterRunner {
 		world.add(new Location(3, 3), new Rock());
 	    world.add(new Location(2,2), new QuickCrab());
 	    world.add(new Location(1,3), new BlusterCritter(5));
+	    world.add(new Location(2,3), new KingCrab());
 		world.show();
 	}
 }

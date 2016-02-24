@@ -1,9 +1,11 @@
 package part4;
 
-import java.util.ArrayList;
 import java.awt.Color;
-import info.gridworld.grid.Location;
-import info.gridworld.grid.Grid; 
+import java.util.ArrayList;
+
+import info.gridworld.actor.Actor;
+import info.gridworld.grid.Grid;
+import info.gridworld.grid.Location; 
 
 public class QuickCrab extends CrabCritter {
 	public QuickCrab () {
@@ -12,7 +14,6 @@ public class QuickCrab extends CrabCritter {
 	}
 	public ArrayList<Location> getMoveLocations() {
 		 ArrayList<Location> locs = new ArrayList<Location>();
-		 Grid g = getGrid();
 
 		 addTwo(locs,getDirection() + Location.LEFT);
 		 addTwo(locs,getDirection() + Location.RIGHT);
@@ -23,7 +24,7 @@ public class QuickCrab extends CrabCritter {
 		 return locs; 
 	}
 	private void addTwo(ArrayList<Location> locs, int dir) {
-		 Grid g = getGrid();
+		 Grid<Actor> g = getGrid();
 		 Location loc = getLocation();
 
 		 Location temp = loc.getAdjacentLocation(dir);

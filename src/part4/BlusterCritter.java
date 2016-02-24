@@ -12,7 +12,7 @@ public class BlusterCritter extends Critter {
 	 private static final double DARKENING_FACTOR = 0.05;
 	
 	 public BlusterCritter (int courage) {
-		this.cour = courage;
+		cour = courage;
 		setColor(Color.ORANGE);
 	}
 	 
@@ -41,7 +41,7 @@ public class BlusterCritter extends Critter {
 		 }
 		 
 	  }
-	 if(count < this.cour) {
+	 if(count < cour) {
 		   brighten();
 		 }
 		 else {
