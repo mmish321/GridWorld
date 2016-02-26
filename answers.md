@@ -143,6 +143,6 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 5. Check out the src code for KingCrag!   
 
 ## Group Activity   
-1. PoopCritter will move like a kingcrab in which it makes other actors move away from it and if they can't, the other actors are removed. It will also poop out brown flowers in which oher critters cannot touch.  
-2.  
+1. PoopCritter will move like a kingcrab in which it makes other actors move away from it and if they can't, the other actors are removed. It will also poop out brown flowers in which other critters cannot touch. It also can't touch its own poop. It drops the poops in frequencies which are part of its constructor in which for the number its passed in ,like 1, the poop critter will poop for every 1 step it takes.
+
  
