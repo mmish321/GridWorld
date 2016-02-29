@@ -143,6 +143,33 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 5. Check out the src code for KingCrag!   
 
 ## Group Activity   
-1. PoopCritter will move like a kingcrab in which it makes other actors move away from it and if they can't, the other actors are removed. It will also poop out brown flowers in which other critters cannot touch. It also can't touch its own poop. It drops the poops in frequencies which are part of its constructor in which for the number its passed in ,like 1, the poop critter will poop for every 1 step it takes.
+1. PoopCritter will move like a kingcrab in which it makes other actors move away from it and if they can't, the other actors are removed. It will also poop out brown flowers in which other critters cannot touch. It also can't touch its own poop. It drops the poops in frequencies which are part of its constructor in which for the number its passed in ,like 1, the poop critter will poop for every 1 step it takes.  
+
+
+# Part 5  
+
+## Set 10  
+1.  The isValid method is specified in the Grid<E> interface and the AbstractGrid, BoundedGrid, and UnboundedGrid all implement the isValid method.  
+2. All of the methods besides toString() call the isValid method, toString() does not need to call isValid because it doesn't need to check if a location is valid or not to convert it into a string. 
+3. getOccupiedAdjacentLocations() and get()  is called in the getNeighbors. The abstract class implements this method.  
+4. It has to include this placeholder method so it doesn't break if the get method returns a null object and process that object.    
+5. This would change the spaces that it will check, there will less spaces to check as it only checks the spaces (forward,back,left,and right)
+
+## Set 11  
+1. You cannot create a BoundedGrid that has 0 columns and 0 rows because it throws an IllegalArgumentException Error.  
+2. The amount of columns is the length of the occupantArray's first elements length which is the row length technically speaking.  
+3. If the spaces's row and column numbers are greater or equal to zero but less than the total number of rows and columns.  
+4. An arrayList is returned. It loops through all the location in the locations array and sees if its occupied, making it a linear method as its time complexity is linear.  
+5.  The get method returns an object of type<E> and uses a location object as a parameter. Its time complexity is simple  
+6. If the location is not valid or the E object is null and it is invalid. Its time complexity is simple.  
+7. Object of type E. If the object from an empty location is attempted it throws a IllegalArgumentException error saying that Location + loc + is not valid. It's time complexity is simple.  
+8.  Yes because only one method was linear and has a greater time complexity while the other methods did not due to the simple call methods and checking they contained.  
+
+## Set 12  
+1. It implements the get() method so it can place the obejct (be it actual critter, bug, or null) into a provided location. A treeMap must be sorted in any order however, locations are not sorted in the Location class, meaning a HashMap must be used or a method to sort the locations
+ 
+
+
+## Set 12
 
  
