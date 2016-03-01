@@ -166,8 +166,19 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 8.  Yes because only one method was linear and has a greater time complexity while the other methods did not due to the simple call methods and checking they contained.  
 
 ## Set 12  
-1. It implements the get() method so it can place the object (be it actual critter, bug, or null) into a provided location. A treeMap must be sorted in any order however, locations are not sorted in the Location class, meaning a HashMap must be used or a method to sort the locations. The Location class must implement the hashChode and the equals method. The hasCode methods must return the same value for 2 locations that test true when the equals method is called. The Location class implements the Comparable interface which contained the compareTo method and the method must be implement for the location class to be an non-abstract class. The compareTo method should return 0 for 2 locations that test true when the equals method is called. The TreeMap requires keys of the map to be Comparable. The Location class satisfies all of these requirements.   
-2.The UnboundedGrid uses a HashMap as its data structure to hold items in the grid, all non-null locations are valid in the grid regardless of its column or row, as long as it doesn't contain another object, it is valid. That
+1. It implements the get() method so it can place the object (be it actual critter, bug, or null) into a provided location. A treeMap must be sorted in any order however, locations are not sorted in the Location class, meaning a HashMap must be used or a method to sort the locations. The Location class must implement the hashMap and the equals method. The hashMap methods must return the same value for 2 locations that test true when the equals method is called. The Location class implements the Comparable interface which contained the compareTo method and the method must be implement for the location class to be an non-abstract class. The compareTo method should return 0 for 2 locations that test true when the equals method is called. The TreeMap requires keys of the map to be Comparable. The Location class satisfies all of these requirements.   
+
+2. The Unbounded Grid uses the get, put, and remove methods to check if a location and object is legal,meaning it cannot be null because in a hashMap, null is a valid key, and isValid will always return true due to the unlimited amount of rows and columns you can have. However a null location is not legal even in an unbounded Grid and it needs to check that location to see if it is null. It also cannot put a null object onto a location because it can't. There are no check for this in the Bounded Grid because these checks are included in the isValid() method because the rows and columns are limited.    
+
+
+3. For all of the get, put, and remove methods, the time complexity would be linear or O(1) and if a tree map were used, the time complexity would be logarithmic.   
+
+4. If a treeMap was used every location would be sorted in ascending order not in a random order in which hashMap because it doesn't sort the different locations.  
+
+5. You could use a Hashmap for a BoundedGrid but it's simply unnecessary. Unbounded Grid has too small a data set to need an kind of unlimited dimentions. A two-dimentional array with its set bounds is the most logical implementation for a bounded Grid. A 2-d array is immutable so it works for the limited rows and columns functionality that a bounded grid has.   
+
+
+
  
 
 
