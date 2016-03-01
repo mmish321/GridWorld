@@ -149,11 +149,11 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 # Part 5  
 
 ## Set 10  
-1.  The isValid method is specified in the Grid<E> interface and the AbstractGrid, BoundedGrid, and UnboundedGrid all implement the isValid method.  
-2. All of the methods besides toString() call the isValid method, toString() does not need to call isValid because it doesn't need to check if a location is valid or not to convert it into a string. 
+1.  The isValid method is specified in the Grid<E> interface and BoundedGrid, and UnboundedGrid all implement the isValid method.  
+2. All of the methods besides toString() call the isValid method whether directly or indirectly because they can also use methods within methods and at least one of those methods will use the isValid() method, toString() does not need to call isValid because it doesn't need to check if a location is valid or not to convert it into a string. 
 3. getOccupiedAdjacentLocations() and get()  is called in the getNeighbors. The abstract class implements this method.  
-4. It has to include this placeholder method so it doesn't break if the get method returns a null object and process that object.    
-5. This would change the spaces that it will check, there will less spaces to check as it only checks the spaces (forward,back,left,and right)
+4. It has to include this placeholder method so it doesn't break if the get method returns a null object and process that object. Basically if there is a null, it will return that location as empty and is added to the test. You  must pass in the object at that certain location.   
+5. This would change the spaces that it will check, there will less spaces to check as it only checks the spaces (forward,back,left,and right) instead of 8 directions
 
 ## Set 11  
 1. You cannot create a BoundedGrid that has 0 columns and 0 rows because it throws an IllegalArgumentException Error.  
@@ -166,10 +166,11 @@ The jumper indeed killed all other actors accept for flowers and jumped 2 spaces
 8.  Yes because only one method was linear and has a greater time complexity while the other methods did not due to the simple call methods and checking they contained.  
 
 ## Set 12  
-1. It implements the get() method so it can place the obejct (be it actual critter, bug, or null) into a provided location. A treeMap must be sorted in any order however, locations are not sorted in the Location class, meaning a HashMap must be used or a method to sort the locations
+1. It implements the get() method so it can place the object (be it actual critter, bug, or null) into a provided location. A treeMap must be sorted in any order however, locations are not sorted in the Location class, meaning a HashMap must be used or a method to sort the locations. The Location class must implement the hashChode and the equals method. The hasCode methods must return the same value for 2 locations that test true when the equals method is called. The Location class implements the Comparable interface which contained the compareTo method and the method must be implement for the location class to be an non-abstract class. The compareTo method should return 0 for 2 locations that test true when the equals method is called. The TreeMap requires keys of the map to be Comparable. The Location class satisfies all of these requirements.   
+2.The UnboundedGrid uses a HashMap as its data structure to hold items in the grid, all non-null locations are valid in the grid regardless of its column or row, as long as it doesn't contain another object, it is valid. That
  
 
 
-## Set 12
+
 
  
